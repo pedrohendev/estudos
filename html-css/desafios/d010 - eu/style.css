@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte0);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), var(--cor3), var(--cor4)); 
+    padding: 15px;
+}
+
+header > h1 {
+    font-size: 3em;
+    font-family: var(--fonte1);
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+header > p {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+nav > a {
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+    padding: 9px;
+}
+
+nav > a:hover {
+    color: var(--cor3);
+    background-color: var(--cor5);
+    border-radius: 9px;
+    transition: background-color .7s;
+}
+
+main {
+    min-width: 400px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+article > h1{
+    font-family: var(--fonte2);
+    font-size: 1.5em;
+    color: var(--cor4);
+    padding: 10px;
+}
+
+article > h3 {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0));
+    padding: 0px 10px;
+    color: var(--cor4);
+    font-family: var(--fonte2);
+}
+
+article > p {
+    text-indent: 20px;
+    padding: 15px;
+    text-align: justify;
+}
+
+/*ROUBEI, VI COMO FAZIA PARA CENTRALIZAR*/
+
+/*img {
+    width: 100%;
+}*/
+
+/*ROUBEI, VI COMO FAZIA PARA CENTRALIZAR*/
+
+/*
+div.video {
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+*/
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);
+}
+
+aside > h4 {
+    color: white;
+    background-color: var(--cor3);
+    /*padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.247);*/
+}
+
+aside > p{
+    text-indent: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+
+/*ROUBEI TAMBÉM*/
+
+/*
+aside > ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+*/
+
+footer {
+    padding: 5px;
+    background-color: var(--cor4);
+    text-align: center;
+    color: white;
+    font-family: var(--fonte0);
+}
