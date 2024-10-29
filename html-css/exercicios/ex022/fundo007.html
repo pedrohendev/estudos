@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alinhamento vertical</title>
+
+    <style>
+
+    #container{
+        position: relative; /*Posição relativa*/
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+        height: 96vh;
+        padding: 10px;
+        background-color: purple;
+    }
+
+    #conteudo{
+        position: absolute; /*Posição absoluta*/
+        left: 50%; /*Só funciona com a posição absoluta*/
+        top: 50%; /*Só funciona com a posição absoluta*/
+        transform: translate(-50%/*horizontal*/, -50%/*vertical*/);
+
+        background-image: url("imagens/target001.png");
+        background-size: 100% 100%;
+
+        height: 200px;
+        width: 400px;
+        background-color: yellow;
+        margin: auto;
+    }
+
+    </style>
+
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
