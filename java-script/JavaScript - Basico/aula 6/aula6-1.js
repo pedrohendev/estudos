@@ -25,3 +25,4 @@ resultadoTriplicado = resultadoDuplicado + 5;
 // console.log(resultadoTriplicado);
 
 console.log(primeiroNumero + segundoNumero);
+
